@@ -1,6 +1,6 @@
-FROM node:10-alpine
+FROM node:11-alpine
 #RUN npm install -g create-react-app \
-RUN yarn global add create-react-app \
+RUN yarn global add create-react-app@2.1.8 \
                    create-react-native-app \
                    react-native-cli
 
@@ -10,4 +10,4 @@ RUN chown -R node:node /app
 USER node
 WORKDIR /app
 
-CMD ["create-react-app", "/app"]
+CMD ["npx" "create-react-app", "/app"]
