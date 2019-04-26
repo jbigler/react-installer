@@ -1,6 +1,6 @@
-FROM node:11-alpine
+FROM node:11.14-alpine
 #RUN npm install -g create-react-app \
-RUN yarn global add create-react-app@2.1.8 \
+RUN yarn global add create-react-app@3.0.0 \
                    create-react-native-app \
                    react-native-cli
 
